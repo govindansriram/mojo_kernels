@@ -73,4 +73,5 @@ def test_unsafe_naive_gemm():
     assert_ptr_equality[float_dtype](M * N, C_host.unsafe_ptr(), C_host2.unsafe_ptr())
 
 def main():
+    # needed to visualize print statements
     test_unsafe_naive_gemm()
